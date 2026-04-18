@@ -192,6 +192,7 @@
                             <div className="grid gap-5">
                                 <button onClick={() => setQuizStep(2)} className="p-6 border-2 rounded-2xl text-left hover:border-red-500 hover:bg-red-50 transition-all font-bold text-lg">Sim, possuo sede comercial.</button>
                                 <button onClick={() => handleQuizAnswer('nao', null, 'di')} className="p-6 border-2 rounded-2xl text-left hover:border-amber-500 hover:bg-amber-50 transition-all font-bold text-lg">Não possuo sede comercial.Ex: Sou Encanador, sou pintor, faço atendimento fora da minha residência ou ponto comercial, faço home office, sou evento público sem estruturas provisórias, etc.</button>
+                                 <button onClick={() => handleQuizAnswer('sim', null, 'ptiot')} className="p-6 border-2 rounded-2xl text-left hover:border-amber-500 hover:bg-amber-50 transition-all font-bold text-lg">Sou um Evento Temporário com Estrutura Provisória (fechamento com Bilheteria ou similiar).</button>
                             </div>
                         </div>
                     )}
@@ -243,6 +244,7 @@
                                     {quizResult === 'pts2' && 'PTS (Caso 2)'}
                                     {quizResult === 'pts3' && 'PTS (Caso 3)'}
                                     {quizResult === 'pt' && 'P.T. (Projeto Técnico)'}
+                                    {quizResult === 'ptiot' && 'PTIOT (Projeto Técnico de Evento Temporário)'}
                                 </span>
                             </div>
                             <button onClick={() => { setActiveTab(quizResult); window.scrollTo(0,0); }} className="w-full bg-slate-900 text-white py-5 rounded-2xl font-black text-xl hover:bg-slate-800 transition-all flex items-center justify-center gap-3 mb-6">
