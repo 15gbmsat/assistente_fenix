@@ -533,30 +533,58 @@
                                 <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-8 text-xs text-red-800 font-bold italic">
                                     Nota: Este processo aplica-se a edificações de eventos com estrutura provisória (ex: Parque de diversões, circos, palcos, arquibancadas de vaquejada, etc) que exigem apresentação de projeto técnico com prazo de entrada de no mínino 15 dias antes do evento.
                                 </div>
-                                <Step number="1" title="Contratação e Desenho do Projeto">Contrate um profissional (Engenheiro/Arquiteto/Técnico) para emitir a ART/RRT/TRT.  Esse profissional vai desenhar a planta do evento, mostrando exatamente onde ficarão o palco, as tendas, as arquibancadas, os extintores, as luzes de emergência e, muito importante, as saídas de emergência largas o suficiente para a quantidade de ingressos que você vai vender </Step>
-                                <Step number="2" title="Protocolo">Anexe a documentação técnica conforme o checklist apresentado.</Step>
-                                <Step number="3" title="Solicitação de Vistoria">Ao finalizar o protocolo no Fênix, Pague A Taxa de Vistoria Gerada pelo Sistema e aguarde a visita técnica  do Bombeiro em seu Estabelecimento.</Step>
-                                <Step number="4" title="Emissão de AVCB" isLast>Após aprovação da vistoria presencial, o AVCB é liberado.</Step>
-                                <Step number="5" title= "Documentação Necessária para Regularizar (Checklist)"> 
-                                    <Step2 title={
+                                <Step number="1" title="Contratação e Desenho do Projeto">Contrate um profissional (Engenheiro/Arquiteto/Técnico) para emitir a ART/RRT/TRT.  Esse profissional vai desenhar a planta do evento, mostrando exatamente onde ficarão o palco, as tendas, as arquibancadas, os extintores, as luzes de emergência e, muito importante, as saídas de emergência largas o suficiente para a evacuação do público em segurança. </Step>
+                                <Step number="2" title="Protocolo e Análise de Projeto com ou sem pirotecnia">Anexe a documentação técnica conforme o checklist apresentado no sistema Fênix que vai gerar uma Taxa de Análise. Caso o evento apresente-se com efeitos pirotécnicos, o seu engenheiro também deverá apresentar a documentação necessária para isso neste momento de análise. O Corpo de Bombeiros vai analisar o projeto e se estiver seguro e correto, eles emitem o ACP (Atestado de Conformidade de Projeto)</Step>
+                                <Step number="3" title="Solicitação de Vistoria">Com o projeto aprovado, o seu engenheiro deve solicitar a vistoria do Corpo de Bombeiros com no mínimo 72 horas (3 dias) de antecedência do início do Evento. Ele enviará pelo sistema toda a documentação exigida no cheklist abaixo. Pague A Taxa de Vistoria Gerada pelo Sistema e aguarde a visita técnica  do Bombeiro no local do evento.</Step>
+                                <Step number="4" title="Montagem Segura da Estrutura">Com a planta aprovada, você começa a montar o evento. Aqui entra um detalhe rigoroso: cada empresa que você contratar para montar a estrutura deve fornecer um documento (ART/RRT) garantindo que o serviço é seguro.</Step>
+                                <Step number="5" title="Emissão de AVCB" isLast>Após aprovação da vistoria presencial, o AVCB é liberado.</Step>
+                                <Step number="6" title= "Documentação Necessária para dar entrada no Projeto Técnico de eventos SEM pirotecnia (Checklist):"> 
+                                    
+                                    <Step2 title="Apresentação da ART/RRT ou TRT referente à elaboração do projeto de incêndio"> </Step2>
+                                    <Step2 title="Planta baixa cotada com indicação dos equipamentos de segurança contra incêndio da instalação e ocupação temporária, assinada por um responsável técnico."isLast> </Step2>
+                                    <Step2 title="Memorial Descritivo da instalação."isLast> </Step2>
+                                    
+                               </Step>
+
+                           <Step number="7" title= "Documentação Necessária para dar entrada no Projeto Técnico de eventos COM pirotecnia (Checklist):"> 
+                               <Step2 title="Apresentação de Toda a documentação do passo anterior (ART/RRT/TRT; Desenho Técnico; Memorial Descritivo)"> </Step2>    
+                               <Step2 title={
     <span>
-        Preenchimento e apresentação do Formulário de Avaliação de Risco do Responsável Técnico  (
-        <a href="https://drive.google.com/uc?export=download&id=1BvoAP3yt3m3wM0HHDhEZIs7pHP1lc5ny" target="_blank" className="text-red-600 underline hover:text-red-800">
-            ANEXO D da IT 42
+        Preenchimento e apresentação do Termo de Responsabilidade da IT 30 do CBMBA  (
+        <a href="AnexoA_30.pdf" target="_blank" className="text-red-600 underline hover:text-red-800">
+            ANEXO A da IT 30
         </a>
         ) devidamente assinada como assinatura digital ou manuscrita válida.
     </span>
 }></Step2>
-                                    <Step2 title="Apresentação da ART/RRT ou TRT referente à instalação e/ou manutenção dos sistemas de segurança contra incêndio e dos riscos específicos (caso existam) na edificação, tais como: controle de material de acabamento e revestimento, gases combustíveis, vasos sob pressão, etc.;"isLast> </Step2>
-                                    <Step2 title="Planta baixa cotada com indicação dos equipamentos de segurança contra incêndio e dos riscos especiais, assinada por um responsável técnico."isLast> </Step2>
-                                    <Step2 title="Anexo J da IT 01 (EXCETO PARA EDIFICAÇÕES COM ÁREA INFERIOR A 200m²) →Documento que comprova que na edificação possui funcionários com conhecimentos básicos para atuar na prevenção e no combate ao princípio de incêndio, abandono de área e primeiros- socorros devidamente treinados por empresas credenciadas junto ao CBMBA."isLast> </Step2>
-                                    
+                                    <Step2 title="Croqui da área: Desenho contendo o isolamento do perímetro e mostrando as distâncias exatas de segurança em relação à rede elétrica, estacionamento, edificações e à área reservada ao público."isLast> </Step2>
+                                    <Step2 title="Comprovante de Capacitação: Cópia do documento que comprove a capacidade técnica do profissional responsável pela queima (o blaster)."isLast> </Step2>
+                                                 
+
+                                </Step>
+
+                         <Step number="8" title= "Documentação Necessária para dar entrada na vistoria da ocupação temporária (Checklist)"> 
+                                    <Step2 title={
+    <span>
+        Preenchimento e apresentação do Termo de Responsabilidade aplicável ao evento programado  (
+        <a href="AnexoA_46.pdf" target="_blank" className="text-red-600 underline hover:text-red-800">
+            ANEXO A da IT 46
+        </a>
+        ) devidamente assinada como assinatura digital ou manuscrita válida.
+    </span>
+}></Step2>
+                                    <Step2 title="ART, RRT ou TRT das estruturas provisórias: Documento atestando a segurança de palcos, arquibancadas, tendas, camarotes, estruturas suspensas e instalações de brinquedos."isLast> </Step2>
+                                    <Step2 title="ART, RRT ou TRT das instalações elétricas: Atestando a segurança da iluminação, sonorização, grupo motogerador e sistema de aterramento."isLast> </Step2>
+                                    <Step2 title="Anexo J da IT 01 →Documento que comprova que no evento possui brigadistas  devidamente credenciados junto ao CBMBA empregados como foi dimensionado em projeto técnico."isLast> </Step2>
+                                    <Step2 title="ART, RRT ou TRT do controle de material de acabamento e revestimento, muito utilizado para comprovar o tratamento contra fogo em lonas e tendas."isLast> </Step2>
+                                    <Step2 title="ART, RRT ou TRT das instalações das medidas de segurança contra incêndio e pânico: Atestando a segurança da iluminação, saída de emergência, extintores e sinalização de emergência."isLast> </Step2>
+                                    <Step2 title="Anexo R da IT 01 com sua respectiva ART/RRT/TRT: Atestado de conformidade da instalação elétrica."isLast> </Step2>
 
                                 </Step>
                                 {/* COLOQUE O LINK DA IMAGEM ABAIXO (entre as aspas do src) */}
                                 <FinalIllustration title="Eventos Temporários" src="ptiot.png" />
 
- <Step number="6" title="O Primeiro Cadastro no Sistema Fênix" isLast>{
+ <Step number="9" title="O Primeiro Cadastro no Sistema Fênix" isLast>{
     <span>
         No link a seguir será apresentado um tutorial de como você se cadastrar no Fênix no Primeiro Acesso. -->
         <a href="http://www.cbm.ba.gov.br/sites/default/files/2024-04/1_-_tutorial_primeiro_acesso_0.pdf" target="_blank" className="text-blue-600 underline hover:text-blue-800">
@@ -564,7 +592,7 @@
         </a>
            </span>
 }</Step>
-                        <Step number="7" title="TutoriaL do passo a passo para emissão do PTS/AVCB no Sistema Fênix" isLast>{
+                        <Step number="10" title="TutoriaL do passo a passo para emissão do PTS/AVCB no Sistema Fênix" isLast>{
     <span>
         No link a seguir será apresentado  um tutorial de como você vai conseguir protocolar seus dados para emitir o CLCB no Fênix. -->
         <a href="http://www.cbm.ba.gov.br/sites/default/files/2024-04/4_-_pts_analise_-_reanalise_0.pdf" target="_blank" className="text-blue-600 underline hover:text-blue-800">
