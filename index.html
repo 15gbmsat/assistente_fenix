@@ -525,6 +525,56 @@
                                 <ActionButtons onFenixClick={handleFenixClick} />
                             </div>
                         )}
+
+ {activeTab === 'ptiot' && (
+                            <div className="max-w-4xl mx-auto p-6 animate-fade-in">
+                                <h2 className="text-4xl font-black mb-2 text-slate-900">PTIOT - PROJETO TÉCNICO DE EVENTO TEMPORÁRIO COM ESTRUTURA PROVISÓRIA (AVCB)</h2>
+                                <p className="mb-10 font-bold text-red-600 uppercase text-xs tracking-widest">Simplificado com Risco | Exige Vistoria</p>
+                                <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-8 text-xs text-red-800 font-bold italic">
+                                    Nota: Este processo aplica-se a edificações com riscos específicos (ex: Escolas Infantis, Depósitos de GLP) que exigem vistoria prévia.
+                                </div>
+                                <Step number="1" title="Contratação">Contrate um profissional (Engenheiro/Arquiteto/Técnico) para emitir a ART/RRT/TRT.</Step>
+                                <Step number="2" title="Protocolo">Anexe a documentação técnica conforme o checklist apresentado.</Step>
+                                <Step number="3" title="Solicitação de Vistoria">Ao finalizar o protocolo no Fênix, Pague A Taxa de Vistoria Gerada pelo Sistema e aguarde a visita técnica  do Bombeiro em seu Estabelecimento.</Step>
+                                <Step number="4" title="Emissão de AVCB" isLast>Após aprovação da vistoria presencial, o AVCB é liberado.</Step>
+                                <Step number="5" title= "Documentação Necessária para Regularizar (Checklist)"> 
+                                    <Step2 title={
+    <span>
+        Preenchimento e apresentação do Formulário de Avaliação de Risco do Responsável Técnico  (
+        <a href="https://drive.google.com/uc?export=download&id=1BvoAP3yt3m3wM0HHDhEZIs7pHP1lc5ny" target="_blank" className="text-red-600 underline hover:text-red-800">
+            ANEXO D da IT 42
+        </a>
+        ) devidamente assinada como assinatura digital ou manuscrita válida.
+    </span>
+}></Step2>
+                                    <Step2 title="Apresentação da ART/RRT ou TRT referente à instalação e/ou manutenção dos sistemas de segurança contra incêndio e dos riscos específicos (caso existam) na edificação, tais como: controle de material de acabamento e revestimento, gases combustíveis, vasos sob pressão, etc.;"isLast> </Step2>
+                                    <Step2 title="Planta baixa cotada com indicação dos equipamentos de segurança contra incêndio e dos riscos especiais, assinada por um responsável técnico."isLast> </Step2>
+                                    <Step2 title="Anexo J da IT 01 (EXCETO PARA EDIFICAÇÕES COM ÁREA INFERIOR A 200m²) →Documento que comprova que na edificação possui funcionários com conhecimentos básicos para atuar na prevenção e no combate ao princípio de incêndio, abandono de área e primeiros- socorros devidamente treinados por empresas credenciadas junto ao CBMBA."isLast> </Step2>
+                                    
+
+                                </Step>
+                                {/* COLOQUE O LINK DA IMAGEM ABAIXO (entre as aspas do src) */}
+                                <FinalIllustration title="PTS Caso 3" src="caso3.png" />
+
+ <Step number="6" title="O Primeiro Cadastro no Sistema Fênix" isLast>{
+    <span>
+        No link a seguir será apresentado um tutorial de como você se cadastrar no Fênix no Primeiro Acesso. -->
+        <a href="http://www.cbm.ba.gov.br/sites/default/files/2024-04/1_-_tutorial_primeiro_acesso_0.pdf" target="_blank" className="text-blue-600 underline hover:text-blue-800">
+            Tutorial de Como se Cadastrar no Fênix.
+        </a>
+           </span>
+}</Step>
+                        <Step number="7" title="TutoriaL do passo a passo para emissão do PTS/AVCB no Sistema Fênix" isLast>{
+    <span>
+        No link a seguir será apresentado  um tutorial de como você vai conseguir protocolar seus dados para emitir o CLCB no Fênix. -->
+        <a href="http://www.cbm.ba.gov.br/sites/default/files/2024-04/4_-_pts_analise_-_reanalise_0.pdf" target="_blank" className="text-blue-600 underline hover:text-blue-800">
+            Tutorial do Protocolo de PTS/AVCB no Fênix.
+        </a>
+           </span>
+}</Step>                   
+                              <ActionButtons onFenixClick={handleFenixClick} />
+                            </div>
+                        )}
                     </main>
                 </div>
             );
