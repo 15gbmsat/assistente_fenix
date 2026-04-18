@@ -104,6 +104,27 @@
         );
 
         /**
+ * Componente para Incorporar Vídeo do YouTube de forma responsiva
+ */
+const VideoTutorial = ({ videoId, title }) => (
+    <div className="mt-8 mb-6 bg-white rounded-[32px] border border-slate-200 shadow-lg overflow-hidden">
+        <div className="p-4 border-b border-slate-100 flex items-center gap-2">
+            <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+            <span className="text-xs font-black uppercase tracking-widest text-slate-500">Vídeo Tutorial: {title}</span>
+        </div>
+        <div className="relative pb-[56.25%] h-0 overflow-hidden w-full">
+            <iframe 
+                className="absolute top-0 left-0 w-full h-full"
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title={title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen
+            ></iframe>
+        </div>
+    </div>
+);
+        /**
          * Botões de Ação de Rodapé
          */
         const ActionButtons = ({ onFenixClick }) => (
@@ -362,6 +383,10 @@
         </a>
            </span>
 }</Step>
+
+                              {/* INSERINDO O VÍDEO AQUI */}
+                <VideoTutorial videoId="https://www.youtube.com/watch?v=iI5fXSoSQGo" title="Passo a Passo do Cadastro no Fênix" />  
+                                
                       <Step number="8" title="TutoriaL do passo a passo para emissão do CLCB no Sistema Fênix" isLast>{
     <span>
         No link a seguir será apresentado  um tutorial de como você vai conseguir protocolar seus dados para emitir o CLCB no Fênix. -->
